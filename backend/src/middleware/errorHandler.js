@@ -4,7 +4,7 @@ const errorHandler = (err, req, res, next) => {
   error.message = err.message;
 
   if (process.env.NODE_ENV === 'development') {
-    console.error('❌ Error:', err);
+    console.error(' Error:', err);
   }
 
 
