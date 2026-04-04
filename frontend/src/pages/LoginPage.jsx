@@ -89,7 +89,7 @@ export default function LoginPage() {
               )}
             </button>
           </form>
-
+          {/*
           <div className="mt-5 pt-4" style={{ borderTop: '1px solid var(--border)' }}>
             <p className="text-xs text-center mb-3" style={{ color: 'var(--text-muted)' }}>Demo accounts — click to fill</p>
             <div className="grid grid-cols-3 gap-2">
@@ -108,7 +108,7 @@ export default function LoginPage() {
               ))}
             </div>
           </div>
-
+*/}
           <p className="text-center text-sm mt-5" style={{ color: 'var(--text-muted)' }}>
             No account?{' '}
             <Link to="/register" style={{ color: 'var(--accent-cyan)' }} className="font-medium hover:underline">
