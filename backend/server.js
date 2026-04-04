@@ -3,12 +3,12 @@ import cors from 'cors';
 import morgan from 'morgan';
 import rateLimit from 'express-rate-limit';
 import dotenv from 'dotenv';
-import connectDB from './config/db.js';
-import errorHandler from './middleware/errorHandler.js';
-import authRoutes from './routes/authRoutes.js';
-import userRoutes from './routes/userRoutes.js';
-import recordRoutes from './routes/recordRoutes.js';
-import dashboardRoutes from './routes/dashboardRoutes.js';
+import connectDB from './src/config/db.js';
+import errorHandler from './src/middleware/errorHandler.js';
+import authRoutes from './src/routes/authRoutes.js';
+import userRoutes from './src/routes/userRoutes.js';
+import recordRoutes from './src/routes/recordRoutes.js';
+import dashboardRoutes from './src/routes/dashboardRoutes.js';
 
 dotenv.config();
 connectDB();
@@ -47,7 +47,6 @@ app.get('/api/health', (req, res) => {
 app.use('*', (req, res) => {
   res.status(404).json({ success: false, message: `Route ${req.originalUrl} not found.` });
 });
-
 
 app.use(errorHandler);
 
