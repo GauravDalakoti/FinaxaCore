@@ -25,15 +25,7 @@ export default function LoginPage() {
     }
   };
 
-  const fillDemo = (role) => {
-    const creds = {
-      admin: { email: 'admin@finance.com', password: 'Admin@123' },
-      analyst: { email: 'analyst@finance.com', password: 'Analyst@123' },
-      viewer: { email: 'viewer@finance.com', password: 'Viewer@123' },
-    };
-    setForm(creds[role]);
-    setError('');
-  };
+ 
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4" style={{ background: 'var(--bg-primary)' }}>
@@ -89,26 +81,7 @@ export default function LoginPage() {
               )}
             </button>
           </form>
-          {/*
-          <div className="mt-5 pt-4" style={{ borderTop: '1px solid var(--border)' }}>
-            <p className="text-xs text-center mb-3" style={{ color: 'var(--text-muted)' }}>Demo accounts — click to fill</p>
-            <div className="grid grid-cols-3 gap-2">
-              {[
-                { role: 'admin', label: 'Admin', color: '#00d4ff' },
-                { role: 'analyst', label: 'Analyst', color: '#8b5cf6' },
-                { role: 'viewer', label: 'Viewer', color: '#f59e0b' },
-              ].map(({ role, label, color }) => (
-                <button key={role} type="button" onClick={() => fillDemo(role)}
-                  className="py-2 rounded-lg text-xs font-semibold transition-all"
-                  style={{ background: `${color}18`, color, border: `1px solid ${color}30` }}
-                  onMouseEnter={e => e.target.style.borderColor = color}
-                  onMouseLeave={e => e.target.style.borderColor = `${color}30`}>
-                  {label}
-                </button>
-              ))}
-            </div>
-          </div>
-*/}
+          
           <p className="text-center text-sm mt-5" style={{ color: 'var(--text-muted)' }}>
             No account?{' '}
             <Link to="/register" style={{ color: 'var(--accent-cyan)' }} className="font-medium hover:underline">
