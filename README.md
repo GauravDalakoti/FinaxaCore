@@ -137,7 +137,8 @@ Frontend runs on: `http://localhost:5173`
  
 ---
 
-# Live Link : [https://](https://finaxacore.vercel.app)
+## 🌐 Live Demo  
+[Visit FinaxaCore](https://finaxacore.vercel.app)
  
 ## 👤 Demo Credentials
  
