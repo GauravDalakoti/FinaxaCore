@@ -148,3 +148,30 @@ Frontend runs on: `http://localhost:5173`
 | **Admin** | admin@finance.com | Admin@123 | Full access |
 | **Analyst** | analyst@finance.com | Analyst@123 | Read + Analytics |
 | **Viewer** | viewer@finance.com | Viewer@123 | View only |
+
+---
+ 
+## ✨ Features
+ 
+### Backend
+- JWT authentication with token expiry
+- Bcrypt password hashing (salt rounds: 12)
+- Role-based middleware (`protect` + `authorize`)
+- Soft delete with restore support
+- Input validation via express-validator
+- Global error handler (CastError, duplicate key, ValidationError)
+- Rate limiting (200 req/15min global, 20 req/15min on auth)
+- MongoDB aggregation pipelines for analytics
+- Pagination on all list endpoints
+ 
+### Frontend
+- Protected routes per role
+- Axios interceptor for auto token injection and 401 redirect
+- Fully responsive (mobile + desktop)
+- Dark theme design system with CSS variables
+- Area, Bar, and Pie charts (Recharts)
+- Record filtering by type, category, date range, search
+- Real-time form validation with inline error messages
+- Loading states and empty states throughout
+ 
+---
