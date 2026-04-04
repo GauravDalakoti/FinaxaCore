@@ -56,4 +56,4 @@ app.listen(PORT, () => {
   console.log(` Server running on port ${PORT} in ${process.env.NODE_ENV || 'development'} mode`);
 });
 
-export {app}
+export default app;
