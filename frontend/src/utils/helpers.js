@@ -8,7 +8,7 @@ export const formatCurrency = (amount, currency = 'INR') => {
 };
 
 export const formatDate = (date) => {
-  return new Date(date).toLocaleDateString('en-US', {
+  return new Date(date).toLocaleDateString('en-IN', {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
@@ -16,7 +16,7 @@ export const formatDate = (date) => {
 };
 
 export const formatDateTime = (date) => {
-  return new Date(date).toLocaleString('en-US', {
+  return new Date(date).toLocaleString('en-IN', {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
